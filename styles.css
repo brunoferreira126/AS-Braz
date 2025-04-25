@@ -1,0 +1,358 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* tag whatsap */
+ 
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  /* Desktop - alinhado com conteúdo principal */
+  @media screen and (min-width: 768px) {
+    .whatsapp-float {
+      right: calc((100% - 1200px) / 2 - 70px); 
+    }
+  }
+  
+  /* Mobile - visível no canto inferior direito */
+  @media screen and (max-width: 767px) {
+    .whatsapp-float {
+      right: 20px;
+    }
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #C69e52;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 10px;
+  }
+  
+  .logo-img {
+    max-width: 220px;
+    height: auto;
+  }
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+  }
+  
+  .hero-content {
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .cta {
+    display: inline-block;
+    background-color: #C69e52;
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+  }
+  
+  .cta:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  
+  /* Sobre */
+  .sobre ul {
+    margin-top: 20px;
+    list-style: none;
+  }
+  
+  .sobre ul li {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #C69e52;
+  }
+  /* Destaques com imagens na seção Sobre */
+.destaques-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .destaque-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    color: #C69e52;
+  }
+  
+  .destaque-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #C69e52;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .destaque-item img:hover {
+    transform: scale(1.05);
+  }
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    background-color: #111;
+    padding: 20px;
+    border: 2px solid #C69e52;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #C69e52;
+  }
+  
+  .casa-projeto {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .galeria-wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .galeria {
+    position: relative;
+  }
+  
+  .galeria-img {
+    width: 100%;
+    display: none;
+    border-radius: 12px;
+    border: 2px solid #C69e52;
+    object-fit: cover;
+    max-height: 500px;
+  }
+  
+  .galeria-img.active {
+    display: block;
+  }
+  
+  .galeria-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(198, 158, 82, 0.9);
+    color: white;
+    font-size: 24px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  
+  .galeria-btn:hover {
+    background-color: #C69e52;
+    color: #000;
+  }
+  
+  .galeria-btn.prev {
+    left: 10px;
+  }
+  
+  .galeria-btn.next {
+    right: 10px;
+  }
+  
+  .descricao {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 12px;
+    border: 1px solid #333;
+  }
+  
+  .descricao h3 {
+    color: #C69e52;
+    margin-bottom: 15px;
+  }
+  
+  .descricao ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .descricao p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+
+  .iframe-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .iframe-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
+  }
+  
+  
+  .contato-whats {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contato-whats:hover {
+    background-color: #1ebe5b;
+  }
+  
+  .contato-whats i {
+    margin-right: 8px;
+  }
+  
+  
+  
+  
+  /* Depoimentos */
+  .depoimentos blockquote {
+    background: #111;
+    padding: 20px;
+    border-left: 4px solid #C69e52;
+    margin-top: 20px;
+    font-style: italic;
+  }
+  
+  /* Contato */
+  .contato-opcoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .contato-link {
+    background-color: #111;
+    color: #C69e52;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #C69e52;
+    transition: 0.3s ease;
+  }
+  
+  .contato-link i {
+    font-size: 20px;
+  }
+  
+  .contato-link:hover {
+    background-color: #C69e52;
+    color: #000;
+  }
+  
+  
+  /* Rodapé */
+  footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+  }
+  
+  footer nav a, .social a {
+    color: #C69e52;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  

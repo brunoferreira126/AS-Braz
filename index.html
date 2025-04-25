@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AS Braz - Construímos Lares</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+
+<body>
+
+  <a href="https://wa.me/558581496514" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+    <header class="logo-header">
+  <img src="imagens/logo perfil.png" alt="Logo AS Braz" class="logo-img" />
+</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Realizando Sonhos com Casas de Qualidade e Confiança</h1>
+      <p>Construímos lares, não apenas casas. Com materiais de alta qualidade, terrenos bem planejados e garantias que trazem segurança para sua família.</p>
+      <a href="#projetos" class="cta">Veja Nossos Projetos</a>
+    </div>
+    <img src="imagens/imagem 1.png" alt="Casa recém construída" class="hero-img" />
+  </section>
+
+ <!-- Sobre com ícones -->
+<section class="sobre" id="sobre">
+    <h2 style="text-align: center;">Construímos com Propósito, Planejamento e Paixão</h2>
+    <p style="text-align: center;">
+      A AS Braz se destaca por sua dedicação em oferecer projetos residenciais de excelência. Desde a escolha estratégica dos terrenos até os acabamentos finais, nossa missão é entregar conforto, segurança e qualidade em cada detalhe. Somos movidos pelo compromisso de transformar sonhos em realidade com responsabilidade, planejamento e muito cuidado.
+    </p>
+    
+    <div class="destaques-grid">
+      <div class="destaque-item">
+        <img src="imagens/tijolo.jpg" alt="Ícone material" />
+        <span>Material de alta qualidade</span>
+      </div>
+      <div class="destaque-item">
+        <img src="imagens/terreno localizao.jpg" alt="Ícone terreno" />
+        <span>Terrenos bem planejados</span>
+      </div>
+      <div class="destaque-item">
+        <img src="imagens/garantia.jpg" alt="Ícone suporte" />
+        <span>Garantia e suporte ao cliente</span>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- Diferenciais com imagens -->
+<section class="diferenciais">
+    <h2 style="text-align: center;">Por que Escolher a AS Braz?</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="imagens/terreno plano.png" alt="Terreno planejado" class="card-img" />
+        <h3>Terrenos Planejados</h3>
+        <p>Sem risco de alagamento, segurança desde a base.</p>
+      </div>
+      <div class="card">
+        <img src="imagens/acabamento.png" alt="Acabamento" class="card-img" />
+        <h3>Acabamentos Detalhados</h3>
+        <p>Beleza e durabilidade em cada espaço.</p>
+      </div>
+      <div class="card">
+        <img src="imagens/garantianova.png" alt="Garantia" class="card-img" />
+        <h3>Garantia de Qualidade</h3>
+        <p>Confiança que vai além da entrega.</p>
+      </div>
+      <div class="card">
+        <img src="imagens/espaço extra.png" alt="Espaço extra" class="card-img" />
+        <h3>Espaços Extras</h3>
+        <p>Ambientes pensados para seu conforto diário.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Casas Disponíveis -->
+<section class="casas" id="projetos">
+  <h2 style="text-align: center;">Casas em Construção</h2>
+  <p style="text-align: center;">Veja o andamento das obras em tempo real e escolha o seu novo lar com confiança.</p>
+
+  <div class="casa-projeto">
+
+    <!-- Galeria com setas -->
+    <div class="galeria-wrapper">
+      <div class="galeria" id="galeria-casa1">
+        <img src="imagens/carrossel.jpg" class="galeria-img active" alt="imagem de como a casa vai ficar" />
+        <img src="imagens/carrossel 1.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 2.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 3.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 4.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 5.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 6.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 7.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 8.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 9.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 10.jpeg" class="galeria-img" alt="imagem casa em construção" />
+        <img src="imagens/carrossel 11.jpeg" class="galeria-img" alt="imagem casa em construção" />
+      </div>
+
+      <button class="galeria-btn prev" onclick="trocarImagem(-1, 'galeria-casa1')">&#10094;</button>
+      <button class="galeria-btn next" onclick="trocarImagem(1, 'galeria-casa1')">&#10095;</button>
+    </div>
+
+    <!-- Descrição estruturada -->
+<div class="descricao">
+  <h3>Casa em Construção - 3 Quartos (1 Suíte)</h3>
+  <ul>
+    <li>Sala ampla</li>
+    <li>Cozinha</li>
+    <li>Banheiro social</li>
+    <li>Área de serviço</li>
+    <li>Área de visita</li>
+    <li>Quintal 3x7m</li>
+    <li>Espaço para deck ou jardim 5x4m</li>
+    <li>1 vaga para carro</li>
+  </ul>
+
+  <p><strong>Localização:</strong> Av. Carlos Alberto Lima Matos - Pindoretama</p>
+
+  <div class="iframe-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1745436643387!5m2!1spt-BR!2sbr!6m8!1m7!1suCX-3wDjmbLXYrT3hlPWKQ!2m2!1d-4.021545630639763!2d-38.31116267366819!3f163.15847864838776!4f10.295030649807742!5f0.7820865974627469" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  <!-- ✅ Botão WhatsApp CENTRALIZADO dentro da descrição -->
+  <a href="https://wa.me/558581496514" class="whatsapp-btn contato-whats" target="_blank">
+    <i class="fab fa-whatsapp"></i> Fale no WhatsApp
+  </a>
+</div>
+
+ <!-- Serviços -->
+<section class="servicos" id="servicos">
+  <h2 style="text-align: center;">Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <i class="fas fa-tools fa-2x" style="color:#C69e52;"></i>
+      <h3>Materiais de Construção</h3>
+      <p>Venda de materiais de alta qualidade para construção civil.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-home fa-2x" style="color:#C69e52;"></i>
+      <h3>Construção de Casas</h3>
+      <p>Desenvolvimento completo de casas residenciais para venda.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-truck-loading fa-2x" style="color:#C69e52;"></i>
+      <h3>Carros Pesados</h3>
+      <p>Serviços com caçambas e tratores para demandas de grande porte.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-mountain fa-2x" style="color:#C69e52;"></i>
+      <h3>Terraplanagem</h3>
+      <p>Serviços de nivelamento e preparação de terrenos para obras.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-drafting-compass fa-2x" style="color:#C69e52;"></i>
+      <h3>Personalização e Consultoria</h3>
+      <p>Apoio ao cliente na escolha de projetos alinhados aos seus sonhos.</p>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- Contato -->
+<section class="contato" id="contato">
+  <h2 style="text-align: center;">Entre em Contato Conosco</h2>
+  <div class="contato-opcoes">
+
+    <a href="https://wa.me/558581496514" class="contato-link" target="_blank">
+      <i class="fab fa-whatsapp"></i> (85) 98149-6514
+    </a>
+
+    <a href="https://www.instagram.com/as.braz/" class="contato-link" target="_blank">
+      <i class="fab fa-instagram"></i> as.braz
+    </a>
+
+    <a href="mailto:as.braz.ltda@gmail.com" class="contato-link">
+      <i class="fas fa-envelope"></i> as.braz.ltda@gmail.com"
+    </a>
+
+  </div>
+
+
+    
+      <!-- Rodapé -->
+      <footer>
+        <nav>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#projetos">Casas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+        <p>© 2025 AS Braz. Todos os direitos reservados.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
